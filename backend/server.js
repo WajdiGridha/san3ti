@@ -3,16 +3,13 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const db = require("./models");
 const Role = db.role;
 
 db.sequelize.sync();
-var corsOptions = {
-  origin: "http://localhost:8081",
-};
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to San3ti application." });
