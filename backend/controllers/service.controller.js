@@ -41,7 +41,7 @@ exports.addService = async (req, res) => {
       "INSERT INTO services SET ?",
       req.body
     );
-    res.json({ id: result.insertId });
+    res.status(200).json({ message: "Service created successfully" });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Error creating service" });
