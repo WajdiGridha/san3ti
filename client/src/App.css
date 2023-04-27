@@ -1,13 +1,18 @@
 
 /* Footer */
 #footer{
-  background-color: #14274e;
+  background-color: #343537;
   padding: 50px 50px 50px 50px;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   
 }
-
+.bgNavB{
+  background-color :#094372 ;
+}
+.link_col{
+  text-decoration: #094372;
+}
 
 .copyright{
   font-size: 1.2rem;
@@ -19,6 +24,7 @@
   color: white;
   
 }
+
 .social-icon:hover{
   color:#6b6d6e
 }
@@ -28,7 +34,7 @@
 }
 
 .color{
-  background-color: #14274e;
+  background-color: #c89710;
     color: white;
 }
 
@@ -45,9 +51,12 @@
 }
 
 .leftNav{
-  background-color: #14274e;
+  background-color: #c89710;
+ /* set background color */
+  border-radius: 0 20px 20px 0; /* set rounded corners on right side */
+  padding: 20px; /* add some padding for spacing */
   border-style: solid;
-  border-color: azure;
+  border-color: rgb(255, 255, 255);
 }
 .leftNav {
   font-size: large;
@@ -76,7 +85,7 @@
 .head{
   background-repeat:no-repeat;
   background-position:bottom right;
-  width: 100%;
+  width: 80%;
   background-size: contain;
  
 }
@@ -114,4 +123,34 @@
 .feed:hover{
   cursor: pointer;
   color: #eaeff3;
+}
+.profile-image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item {
+
+  transition: all 0.2s ease-in-out;
+}
+.itemH {
+
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}
+.itemH:hover {
+  transform: scale(1.1);
 }

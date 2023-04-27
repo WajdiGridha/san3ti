@@ -153,7 +153,7 @@ function SignupForm(props) {
             errors.repassword = "Password doesn't Match"
 
 
-        const reg = /^\d{10}$/;
+        const reg = /^\d{8}$/;
         if (initialState.touched.MobileNo && !reg.test(MobileNo))
             errors.MobileNo = 'Enter a valid Mobile Number';
         if (initialState.touched.Email && Email.split('').filter(x => x === '@').length !== 1)

@@ -24,7 +24,7 @@ class AboutUs extends Component{
                 
                 <div className="row container-fluid">
                 <p>
-                        MyHelp provides local service providers a platform to provide services to the customer and increase their reach. It also helps customers book reliable home services like beauty services, massage therapy, cleaning, plumbing,carpentry, appliance repair, painting etc to empower millions of service professionals across the world to deliver services at home like never before. 
+                        SAN3TI provides local service providers a platform to provide services to the customer and increase their reach. It also helps customers book reliable home services like beauty services, massage therapy, cleaning, plumbing,carpentry, appliance repair, painting etc to empower millions of service professionals across the world to deliver services at home like never before. 
                         
                         </p>
                         <p>
@@ -55,16 +55,16 @@ class AboutUs extends Component{
             
             <hr className="w-90"/>
 
-            <div className="row">
+            <div className="row" style={{ paddingLeft:'35%' }}>
                 <div className="col-md-3 mt-1">
                     <div className="card">
                     <div className="card-body">
-                        <h5 className="card-title">Aaryan Sharma</h5>
+                        <h5 className="card-title">Gridha Wajdi</h5>
                         <p className="card-text">Full Stack Web Developer</p>
-                        <a href="https://www.linkedin.com/in/aaryan-sharma/" target="_blank">
+                        <a href="https://linkedin.com/in/wajdi-gridha-b034471b4" target="_blank">
                             <i className="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/Aaryan8751" target="_blank">
+                        <a href="https://github.com/WajdiGridha" target="_blank">
                             <i style={{color:'black'}} className="fab fa-github fa-2x ml-2 " aria-hidden="true"></i>
                         </a>
                     </div>
@@ -73,45 +73,18 @@ class AboutUs extends Component{
                 <div className="col-md-3 mt-1">
                     <div className="card">
                     <div className="card-body">
-                        <h5 className="card-title">Pratikshit Agrahari</h5>
-                        <p className="card-text">Frontend Developer</p>
-                        <a href="https://www.linkedin.com/in/pratikshitagrahari/" target="_blank">
+                        <h5 className="card-title">Kahlaoui Amine</h5>
+                        <p className="card-text">Full Stack Web Developer</p>
+                        <a href="https://www.linkedin.com/in/amine-kahlaoui-8689491b9/" target="_blank">
                             <i className="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/Pratikshit09" target="_blank">
-                            <i style={{color:'black'}} className="fab fa-github fa-2x ml-2" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div className="col-md-3 mt-1">
-                    <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">Naman Cheetu</h5>
-                        <p className="card-text">Frontend Developer</p>
-                        <a href="https://www.linkedin.com/in/naman-cheetu-135455188/" target="_blank">
-                            <i className="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/namancheetu" target="_blank">
-                            <i style={{color:'black'}} className="fab fa-github fa-2x ml-2" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div className="col-md-3 mt-1">
-                    <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">Kunal Mahajan</h5>
-                        <p className="card-text">Backend Developer</p>
-                        <a href="https://www.linkedin.com/in/kunal-mahajan-431b97189/" target="_blank">
-                            <i className="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/kunalmahajan12" target="_blank">
+                        <a href="https://github.com/kahlaoui-amine" target="_blank">
                             <i style={{color:'black'}} className="fab fa-github fa-2x ml-2 " aria-hidden="true"></i>
                         </a>
                     </div>
                     </div>
                 </div>
+               
 
             </div>
           </div>

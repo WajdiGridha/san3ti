@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import ServiceProviderMainComponent from './ServiceProviderMainComponent';
 
 import Home from './Home';
+import NavB from './NavB';
 
 import Navbar1 from './Navbar';
 import Footer from './Footer';
@@ -106,7 +107,10 @@ class Main extends Component{
             
             <div>
             <Navbar1 auth={this.props.auth} loginUser={this.props.loginUser} logoutUser={this.props.logoutUser}/>
+            <NavB/>
+
             <Switch>
+                
                 <Route path="/home" component={() => <Home />} />
                 <Route path="/Login" component={() => <LoginForm auth={this.props.auth} loginUser={this.props.loginUser} />} />
                 <ServiceProviderRoute path='/ServiceProvider' component = {()=><ServiceProviderMainComponent customers = {this.props.customers} bookings={this.props.bookings} feedbacks={this.props.feedbacks} serviceProviders = {this.props.serviceProviders} auth={this.props.auth} deletebooking={this.props.deletebooking} updateServiceProviderInfo={this.props.updateServiceProviderInfo} />}/>

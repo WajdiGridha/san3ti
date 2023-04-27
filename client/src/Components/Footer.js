@@ -17,7 +17,7 @@ function Footer() {
 
                 </div>
             </div>
-            <p className="col-12 copyright">Copyright © 2021</p>
+            <p className="col-12 copyright">Copyright © 2023</p>
         </footer>
     )
 }
