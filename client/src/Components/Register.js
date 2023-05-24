@@ -120,6 +120,11 @@ function SignupForm(props) {
     });
   };
 
+  const [selectedOption, setSelectedOption] = useState("");
+  const handleOptionSelect = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   const handleInputChange = (event) => {
     const target = event.target;
     const value = target.value;
@@ -384,15 +389,39 @@ function SignupForm(props) {
                       </Label>
                       <Input
                         required
-                        type="text"
-                        id="City"
+                        type="select"
                         name="City"
+                        id="City"
                         value={initialState.City}
+                        className="form-control"
                         onChange={handleInputChange}
-                        valid={errors.City === ""}
-                        invalid={errors.City !== ""}
-                        onBlur={handleBlur("City")}
-                      />
+                      >
+                        <option defaultValue>Select</option>
+                        <option value="Ariana">Ariana</option>
+                        <option value="Béja">Béja</option>
+                        <option value="Ben Arous">Ben Arous</option>
+                        <option value="Bizerte">Bizerte</option>
+                        <option value="Gafsa">Gafsa</option>
+                        <option value="Gabes">Gabès</option>
+                        <option value="Jendouba">Jendouba</option>
+                        <option value="Kairouan">Kairouan</option>
+                        <option value="Kasserine">Kasserine</option>
+                        <option value="Kébili">Kébili</option>
+                        <option value="Le Kef">Le Kef</option>
+                        <option value="Mahdia">Mahdia</option>
+                        <option value="La Manouba">La Manouba</option>
+                        <option value="Médenine">Médenine</option>
+                        <option value="Monastir">Monastir</option>
+                        <option value="Nabeul">Nabeul</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                        <option value="Siliana">Siliana</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Tataouine">Tataouine</option>
+                        <option value="Tozeur">Tozeur</option>
+                        <option value="Tunis">Tunis</option>
+                        <option value="Zaghouan">Zaghouan</option>
+                      </Input>
                       <FormFeedback>{errors.City}</FormFeedback>
                     </FormGroup>
 
@@ -533,15 +562,39 @@ function SignupForm(props) {
                       </Label>
                       <Input
                         required
-                        type="text"
-                        id="City"
+                        type="select"
                         name="City"
+                        id="City"
                         value={initialState.City}
+                        className="form-control"
                         onChange={handleInputChange}
-                        valid={errors.City === ""}
-                        invalid={errors.City !== ""}
-                        onBlur={handleBlur("City")}
-                      />
+                      >
+                        <option defaultValue>Select</option>
+                        <option value="Ariana">Ariana</option>
+                        <option value="Béja">Béja</option>
+                        <option value="Ben Arous">Ben Arous</option>
+                        <option value="Bizerte">Bizerte</option>
+                        <option value="Gafsa">Gafsa</option>
+                        <option value="Gabes">Gabès</option>
+                        <option value="Jendouba">Jendouba</option>
+                        <option value="Kairouan">Kairouan</option>
+                        <option value="Kasserine">Kasserine</option>
+                        <option value="Kébili">Kébili</option>
+                        <option value="Le Kef">Le Kef</option>
+                        <option value="Mahdia">Mahdia</option>
+                        <option value="La Manouba">La Manouba</option>
+                        <option value="Médenine">Médenine</option>
+                        <option value="Monastir">Monastir</option>
+                        <option value="Nabeul">Nabeul</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                        <option value="Siliana">Siliana</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Tataouine">Tataouine</option>
+                        <option value="Tozeur">Tozeur</option>
+                        <option value="Tunis">Tunis</option>
+                        <option value="Zaghouan">Zaghouan</option>
+                      </Input>
                       <FormFeedback>{errors.City}</FormFeedback>
                     </FormGroup>
 
